@@ -1,4 +1,4 @@
-def extraer_del_fichero_ejer1():
+def extraer_del_fichero_ejer1() -> list:
     """
     Extraer del fichero de alojamientos una lista con todos los alojamientos, 
     donde cada alojamiento sea un diccionario que contenga el identificador del alojamiento, 
