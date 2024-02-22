@@ -24,4 +24,5 @@ def extraer_del_fichero_ejer1() -> list:
     7º Cuando hayáis recorrido todas las líneas, fuera del bucle, cerráis el archivo y devolvéis la lista creada en el paso 0 de la siguiente manera:
     return nombre_lista
     """
+    fichero = open("la ruta del fichero")
     
