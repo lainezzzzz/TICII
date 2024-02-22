@@ -6,9 +6,10 @@ import Ejer5 as ejer5
 
 def principal():
     
+    print("PROGRAMA DEL GRUPO 1. DATOS AIRBNB DE MALAGA")
+    
     # Extraemos los datos del fichero
-    #lista_alojamientos = ejer1.extraer_del_fichero_ejer1()
-    lista_alojamientos = [1,2,3]
+    lista_alojamientos = ejer1.extraer_del_fichero_ejer1()
     opc = 0
     
     while(opc != 5):
@@ -27,7 +28,7 @@ def principal():
         elif opc == 3:
             ejer4.alojamiento_mas_barato(lista_alojamientos)
         elif opc == 4:
-            ejer5.alojamientos_de_anfitriones(lista_alojamientos=lista_alojamientos)
+            ejer5.alojamientos_de_anfitriones(lista_alojamientos)
         elif opc == 5:
             print("Saliendo...")
         else:
