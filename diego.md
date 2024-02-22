@@ -10,6 +10,7 @@ git config --global user.name "tuNombre"
 ```bash:
 git add .
 git commit -m "Cambios de tuNombre"
+git pull
 git push
 ```
 

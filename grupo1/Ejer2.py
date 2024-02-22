@@ -16,3 +16,5 @@ def n_alojamientos_por_distrito_ejer2(lista_alojamientos):
     
     
     """
+    
+    
