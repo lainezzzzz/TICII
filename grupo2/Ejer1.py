@@ -25,3 +25,14 @@ def extraer_del_fichero_ejer1():
     return nombre_lista
     """
     
+    if opc == "1":
+        print("Introduzca su usuario: ")
+        usuario = input()
+
+    # Ver si el user está en el sistema
+
+    fichero = open("ejercicioentregable/Sesiones.txt", "r")
+    lista_sesiones = fichero.readlines() # Una lista con las sesiones abiertas
+
+    for usuario in lista_sesiones:
+        print(usuario)   
