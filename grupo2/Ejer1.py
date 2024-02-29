@@ -24,15 +24,24 @@ def extraer_del_fichero_ejer1():
     7º Cuando hayáis recorrido todas las líneas, fuera del bucle, cerráis el archivo y devolvéis la lista creada en el paso 0 de la siguiente manera:
     return nombre_lista
     """
+
+    alojamientos = []  
     
-    if opc == "1":
-        print("Introduzca su usuario: ")
-        usuario = input()
+    with open('nombre_del_fichero.csv', 'r') as archivo: 
+        next(archivo)  
+        for linea in archivo:  
+            datos = linea.strip().split(',') 
+            identificador = datos[0]
+            id_anfitrion = datos[2]
+            distrito = datos[5]
+            precio = int(datos[9])
+            alojamiento = {
+                'id': identificador,
+                'host_id': id_anfitrion,
+                'distrito': distrito,
+                'precio': precio
+            }
+            alojamientos.append(alojamiento)
+    
+    return alojamientos  
 
-    # Ver si el user está en el sistema
-
-    fichero = open("ejercicioentregable/Sesiones.txt", "r")
-    lista_sesiones = fichero.readlines() # Una lista con las sesiones abiertas
-
-    for usuario in lista_sesiones:
-        print(usuario)   z
