@@ -4,10 +4,10 @@ def alojamientos_para_viajeros(lista_alojamientos):
     muestre la lista de alojamientos que se ajusten al presupuesto dado.
     """
     lista_alojamientos = [
-        {'nombre': 'Hotel A', 'precio': 100},
-        {'nombre': 'Hotel B', 'precio': 150},
-        {'nombre': 'Hotel C', 'precio': 200},
-        {'nombre': 'Hotel D', 'precio': 250}
+        {'host_id': 'neighbourhood', 'price': 100},
+        {'host_id': 'neighbourhood', 'price': 150},
+        {'host_id': 'neighbourhood', 'price': 200},
+        {'host_id': 'neighbourhood', 'price': 250}
     ]
 
     presupuesto = float(input("Ingrese su presupuesto: "))
