@@ -44,6 +44,3 @@ def extraer_del_fichero_ejer1():
             alojamientos.append(alojamiento)
     
     return alojamientos  
-
-resultado = extraer_del_fichero_ejer1()
-print(resultado)
