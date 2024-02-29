@@ -1,16 +1,8 @@
-def alojamientos_para_viajeros(alojamientos, presupuesto, lista_alojamientos):
+def alojamientos_para_viajeros(lista_alojamientos):
     """
     Crear una función que reciba la lista de alojamientos, pregunte por el presupuesto y 
     muestre la lista de alojamientos que se ajusten al presupuesto dado.
     """
-
-
-    alojamientos_compatibles = []
-    for alojamiento in alojamientos:
-        if alojamiento['precio'] <= presupuesto:
-            alojamientos_compatibles.append(alojamiento)
-    return alojamientos_compatibles
-
     lista_alojamientos = [
         {'nombre': 'Hotel A', 'precio': 100},
         {'nombre': 'Hotel B', 'precio': 150},
@@ -18,13 +10,17 @@ def alojamientos_para_viajeros(alojamientos, presupuesto, lista_alojamientos):
         {'nombre': 'Hotel D', 'precio': 250}
     ]
 
-    presupuesto_usuario = float(input("Ingrese su presupuesto: "))
+    presupuesto = float(input("Ingrese su presupuesto: "))
 
-    alojamientos_compatibles = alojamientos_para_viajeros(lista_alojamientos, presupuesto_usuario)
-
+    alojamientos_compatibles = []
+    for alojamiento in lista_alojamientos:
+        if alojamiento['precio'] <= presupuesto:
+            alojamientos_compatibles.append(alojamiento)
+    
     if alojamientos_compatibles:
         print("Los alojamientos que se adapta a su presuouesto son:")
         for alojamiento in alojamientos_compatibles:
-            print("- Nombre:", alojamiento['nombre'], "| Precio:", alojamiento['precio'])
-    else:
-        print("Lo siento, e mu caro y no hay alojamientos")
+            print("- Nombre:", alojamiento['nombre'],
+                  "| Precio:", alojamiento['precio'])
+    
+    return alojamientos_compatibles
