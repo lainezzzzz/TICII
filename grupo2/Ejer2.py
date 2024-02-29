@@ -16,3 +16,25 @@ def n_alojamientos_por_distrito_ejer2(lista_alojamientos):
     
     
     """
+    
+lista_alojamientos = [
+    {"id":"96033",
+    "host_id":"510467",
+    "neighbourhood":"Este",
+    "price":"53"},
+    {"id":"250154",
+    "host_id":"346238",
+    "neighbourhood":"Este",
+    "price":"75"},
+    {"id":"459858",
+    "host_id":"298567",
+    "neighbourhood":"Oeste",
+    "price":"110"},
+    {"id":"649210",
+    "host_id":"187453",
+    "neighbourhood":"Este",
+    "price":"65"}
+]
+
+show_hosts_and_accommodations(lista_alojamientos)
+    
