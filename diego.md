@@ -49,5 +49,35 @@ for linea in lineas_todos_datos:
     ```Python:
     TODO
     ```
+### Datos de prueba para que probéis vuestros ejercicios
+
+```Python:
+lista_alojamientos = [
+        {"id":"96033",
+        "host_id":"510467",
+        "neighbourhood":"Este",
+        "price":"53"},
+        {"id":"96035",
+        "host_id":"5540467",
+        "neighbourhood":"Centro",
+        "price":"70"},
+        {"id":"987654",
+        "host_id":"65432",
+        "neighbourhood":"Este",
+        "price":"25"},
+        {"id":"1234",
+        "host_id":"4567",
+        "neighbourhood":"Este",
+        "price":"93"},
+        {"id":"86408",
+        "host_id":"789",
+        "neighbourhood":"Centro",
+        "price":"60"},
+        {"id":"844",
+        "host_id":"8712315",
+        "neighbourhood":"Este",
+        "price":"40"}
+        ]
+```
     
 
