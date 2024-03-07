@@ -36,5 +36,6 @@ def n_alojamientos_por_distrito_ejer2(lista_alojamientos):
         "price":"65"}
     ]
 
-    
-    
+    for alojamientos in lista_alojamientos:
+        print:(alojamientos["datos"])
+ 
