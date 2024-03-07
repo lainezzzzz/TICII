@@ -27,7 +27,7 @@ def extraer_del_fichero_ejer1():
 
     alojamientos = []  
     
-    with open('sevilla.csv', 'r') as archivo: 
+    with open('Proyecto TIC/TICII/Datos/sevilla.csv', 'r') as archivo: 
         next(archivo)  
         for linea in archivo:  
             datos = linea.strip().split(',') 
