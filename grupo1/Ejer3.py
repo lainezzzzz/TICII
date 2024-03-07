@@ -35,7 +35,7 @@ presupuesto = float(input("Ingrese su presupuesto: "))
 
 alojamientos_compatibles = []
 for alojamiento in lista_alojamientos:
-    if alojamiento[str("price")] <= presupuesto:
+    if float (alojamiento[("price")]) <= presupuesto:
         alojamientos_compatibles.append(alojamiento)
 
 if alojamientos_compatibles:
